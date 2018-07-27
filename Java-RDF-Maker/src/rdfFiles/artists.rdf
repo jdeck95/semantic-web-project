@@ -1,0 +1,155 @@
+<rdf:RDF
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns:jdeck="htpp://www.imn.htwk-leipzig.de/~jdeck/semanticweb/ontologie#"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema#">
+  <owl:Class rdf:about="htpp://www.imn.htwk-leipzig.de/~jdeck/semanticweb/ontologie#Artist"/>
+  <owl:DatatypeProperty rdf:about="htpp://www.imn.htwk-leipzig.de/~jdeck/semanticweb/ontologie#followers">
+    <rdfs:comment xml:lang="DE">Anzahl der Follower des Künstlers</rdfs:comment>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    <rdfs:domain rdf:resource="htpp://www.imn.htwk-leipzig.de/~jdeck/semanticweb/ontologie#Artist"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="htpp://www.imn.htwk-leipzig.de/~jdeck/semanticweb/ontologie#id">
+    <rdfs:comment xml:lang="DE">ID des Künstlers</rdfs:comment>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:domain rdf:resource="htpp://www.imn.htwk-leipzig.de/~jdeck/semanticweb/ontologie#Artist"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="htpp://www.imn.htwk-leipzig.de/~jdeck/semanticweb/ontologie#name">
+    <rdfs:comment xml:lang="DE">Name des Künstlers</rdfs:comment>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:domain rdf:resource="htpp://www.imn.htwk-leipzig.de/~jdeck/semanticweb/ontologie#Artist"/>
+  </owl:DatatypeProperty>
+  <jdeck:Artist rdf:about="htpp://www.imn.htwk-leipzig.de/~jdeck/semanticweb/ontologie#Combichrist">
+    <jdeck:id>5556RAgwP70PnXbaUTGNbR</jdeck:id>
+    <jdeck:followers rdf:datatype="http://www.w3.org/2001/XMLSchema#long"
+    >73215</jdeck:followers>
+    <jdeck:name>Combichrist</jdeck:name>
+  </jdeck:Artist>
+  <jdeck:Artist rdf:about="htpp://www.imn.htwk-leipzig.de/~jdeck/semanticweb/ontologie#SteveEarle">
+    <jdeck:id>2UBTfUoLI07iRqGeUrwhZh</jdeck:id>
+    <jdeck:followers rdf:datatype="http://www.w3.org/2001/XMLSchema#long"
+    >117697</jdeck:followers>
+    <jdeck:name>Steve Earle</jdeck:name>
+  </jdeck:Artist>
+  <jdeck:Artist rdf:about="htpp://www.imn.htwk-leipzig.de/~jdeck/semanticweb/ontologie#Fler">
+    <jdeck:id>75ctWsRuGXmxMxnFPkuEwA</jdeck:id>
+    <jdeck:followers rdf:datatype="http://www.w3.org/2001/XMLSchema#long"
+    >161760</jdeck:followers>
+    <jdeck:name>Fler</jdeck:name>
+  </jdeck:Artist>
+  <jdeck:Artist rdf:about="htpp://www.imn.htwk-leipzig.de/~jdeck/semanticweb/ontologie#Counterparts">
+    <jdeck:id>5LyRnL0rysObxDRxzSfV1z</jdeck:id>
+    <jdeck:followers rdf:datatype="http://www.w3.org/2001/XMLSchema#long"
+    >68874</jdeck:followers>
+    <jdeck:name>Counterparts</jdeck:name>
+  </jdeck:Artist>
+  <jdeck:Artist rdf:about="htpp://www.imn.htwk-leipzig.de/~jdeck/semanticweb/ontologie#Lina">
+    <jdeck:id>3YPpKFZGAT0O8SJca2Aaj8</jdeck:id>
+    <jdeck:followers rdf:datatype="http://www.w3.org/2001/XMLSchema#long"
+    >29611</jdeck:followers>
+    <jdeck:name>Lina</jdeck:name>
+  </jdeck:Artist>
+  <jdeck:Artist rdf:about="htpp://www.imn.htwk-leipzig.de/~jdeck/semanticweb/ontologie#GlassAnimals">
+    <jdeck:id>4yvcSjfu4PC0CYQyLy4wSq</jdeck:id>
+    <jdeck:followers rdf:datatype="http://www.w3.org/2001/XMLSchema#long"
+    >755503</jdeck:followers>
+    <jdeck:name>Glass Animals</jdeck:name>
+  </jdeck:Artist>
+  <jdeck:Artist rdf:about="htpp://www.imn.htwk-leipzig.de/~jdeck/semanticweb/ontologie#PhilCampbell">
+    <jdeck:id>1mlz65ifWolam3I7vqzcbG</jdeck:id>
+    <jdeck:followers rdf:datatype="http://www.w3.org/2001/XMLSchema#long"
+    >6</jdeck:followers>
+    <jdeck:name>Phil Campbell</jdeck:name>
+  </jdeck:Artist>
+  <jdeck:Artist rdf:about="htpp://www.imn.htwk-leipzig.de/~jdeck/semanticweb/ontologie#Sum41">
+    <jdeck:id>0qT79UgT5tY4yudH9VfsdT</jdeck:id>
+    <jdeck:followers rdf:datatype="http://www.w3.org/2001/XMLSchema#long"
+    >1600522</jdeck:followers>
+    <jdeck:name>Sum 41</jdeck:name>
+  </jdeck:Artist>
+  <jdeck:Artist rdf:about="htpp://www.imn.htwk-leipzig.de/~jdeck/semanticweb/ontologie#Lordi">
+    <jdeck:id>14SgKNlOCKAI0PfRD1HnWh</jdeck:id>
+    <jdeck:followers rdf:datatype="http://www.w3.org/2001/XMLSchema#long"
+    >96536</jdeck:followers>
+    <jdeck:name>Lordi</jdeck:name>
+  </jdeck:Artist>
+  <jdeck:Artist rdf:about="htpp://www.imn.htwk-leipzig.de/~jdeck/semanticweb/ontologie#Wednesday13">
+    <jdeck:id>6Cvzf33JDzCIw2eJU8npQo</jdeck:id>
+    <jdeck:followers rdf:datatype="http://www.w3.org/2001/XMLSchema#long"
+    >27938</jdeck:followers>
+    <jdeck:name>Wednesday 13</jdeck:name>
+  </jdeck:Artist>
+  <jdeck:Artist rdf:about="htpp://www.imn.htwk-leipzig.de/~jdeck/semanticweb/ontologie#Amorphis">
+    <jdeck:id>2UOVgpgiNTC6KK0vSC77aD</jdeck:id>
+    <jdeck:followers rdf:datatype="http://www.w3.org/2001/XMLSchema#long"
+    >114575</jdeck:followers>
+    <jdeck:name>Amorphis</jdeck:name>
+  </jdeck:Artist>
+  <jdeck:Artist rdf:about="htpp://www.imn.htwk-leipzig.de/~jdeck/semanticweb/ontologie#Motorjesus">
+    <jdeck:id>5ZD2aRanslnMOZ7EO9Onde</jdeck:id>
+    <jdeck:followers rdf:datatype="http://www.w3.org/2001/XMLSchema#long"
+    >5361</jdeck:followers>
+    <jdeck:name>Motorjesus</jdeck:name>
+  </jdeck:Artist>
+  <jdeck:Artist rdf:about="htpp://www.imn.htwk-leipzig.de/~jdeck/semanticweb/ontologie#Hammerfall">
+    <jdeck:id>2o18h28enlHxj887tATc58</jdeck:id>
+    <jdeck:followers rdf:datatype="http://www.w3.org/2001/XMLSchema#long"
+    >241791</jdeck:followers>
+    <jdeck:name>Hammerfall</jdeck:name>
+  </jdeck:Artist>
+  <jdeck:Artist rdf:about="htpp://www.imn.htwk-leipzig.de/~jdeck/semanticweb/ontologie#FlashForward">
+    <jdeck:id>7tdC77yyABquZ7vEAscwvB</jdeck:id>
+    <jdeck:followers rdf:datatype="http://www.w3.org/2001/XMLSchema#long"
+    >1816</jdeck:followers>
+    <jdeck:name>Flash Forward</jdeck:name>
+  </jdeck:Artist>
+  <jdeck:Artist rdf:about="htpp://www.imn.htwk-leipzig.de/~jdeck/semanticweb/ontologie#AxelRudiPell">
+    <jdeck:id>7dWw3TXxNe2aEhng9vVRNl</jdeck:id>
+    <jdeck:followers rdf:datatype="http://www.w3.org/2001/XMLSchema#long"
+    >49865</jdeck:followers>
+    <jdeck:name>Axel Rudi Pell</jdeck:name>
+  </jdeck:Artist>
+  <jdeck:Artist rdf:about="htpp://www.imn.htwk-leipzig.de/~jdeck/semanticweb/ontologie#FirstAidKit">
+    <jdeck:id>21egYD1eInY6bGFcniCRT1</jdeck:id>
+    <jdeck:followers rdf:datatype="http://www.w3.org/2001/XMLSchema#long"
+    >732226</jdeck:followers>
+    <jdeck:name>First Aid Kit</jdeck:name>
+  </jdeck:Artist>
+  <jdeck:Artist rdf:about="htpp://www.imn.htwk-leipzig.de/~jdeck/semanticweb/ontologie#JoshT.Pearson">
+    <jdeck:id>0GgNchtU9Fst3uEshZ7mV9</jdeck:id>
+    <jdeck:followers rdf:datatype="http://www.w3.org/2001/XMLSchema#long"
+    >6759</jdeck:followers>
+    <jdeck:name>Josh T. Pearson</jdeck:name>
+  </jdeck:Artist>
+  <jdeck:Artist rdf:about="htpp://www.imn.htwk-leipzig.de/~jdeck/semanticweb/ontologie#Jalil">
+    <jdeck:id>6pBDI6JuD02u2ZpynOYhRg</jdeck:id>
+    <jdeck:followers rdf:datatype="http://www.w3.org/2001/XMLSchema#long"
+    >9511</jdeck:followers>
+    <jdeck:name>Jalil</jdeck:name>
+  </jdeck:Artist>
+  <jdeck:Artist rdf:about="htpp://www.imn.htwk-leipzig.de/~jdeck/semanticweb/ontologie#GrahamNash">
+    <jdeck:id>2E6Roj0oQnJIm2BeXwDica</jdeck:id>
+    <jdeck:followers rdf:datatype="http://www.w3.org/2001/XMLSchema#long"
+    >60005</jdeck:followers>
+    <jdeck:name>Graham Nash</jdeck:name>
+  </jdeck:Artist>
+  <jdeck:Artist rdf:about="htpp://www.imn.htwk-leipzig.de/~jdeck/semanticweb/ontologie#DieterThomasKuhn">
+    <jdeck:id>34MeWXsaYc0YF8YkKliSk0</jdeck:id>
+    <jdeck:followers rdf:datatype="http://www.w3.org/2001/XMLSchema#long"
+    >6780</jdeck:followers>
+    <jdeck:name>Dieter Thomas Kuhn</jdeck:name>
+  </jdeck:Artist>
+  <jdeck:Artist rdf:about="htpp://www.imn.htwk-leipzig.de/~jdeck/semanticweb/ontologie#Helmet">
+    <jdeck:id>0qB0cTENhSUc0feov5qbg0</jdeck:id>
+    <jdeck:followers rdf:datatype="http://www.w3.org/2001/XMLSchema#long"
+    >83302</jdeck:followers>
+    <jdeck:name>Helmet</jdeck:name>
+  </jdeck:Artist>
+  <jdeck:Artist rdf:about="htpp://www.imn.htwk-leipzig.de/~jdeck/semanticweb/ontologie#Serum114">
+    <jdeck:id>0BHPV8mGG3aOrm2A6aaVfd</jdeck:id>
+    <jdeck:followers rdf:datatype="http://www.w3.org/2001/XMLSchema#long"
+    >15269</jdeck:followers>
+    <jdeck:name>Serum 114</jdeck:name>
+  </jdeck:Artist>
+</rdf:RDF>

@@ -1,0 +1,128 @@
+<rdf:RDF
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns:jdeck="htpp://www.imn.htwk-leipzig.de/~jdeck/semanticweb/ontologie#"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema#">
+  <owl:Class rdf:about="htpp://www.imn.htwk-leipzig.de/~jdeck/semanticweb/ontologie#Concert"/>
+  <owl:DatatypeProperty rdf:about="htpp://www.imn.htwk-leipzig.de/~jdeck/semanticweb/ontologie#artistName">
+    <rdfs:comment xml:lang="DE">Name des Künstlers</rdfs:comment>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:domain rdf:resource="htpp://www.imn.htwk-leipzig.de/~jdeck/semanticweb/ontologie#Concert"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="htpp://www.imn.htwk-leipzig.de/~jdeck/semanticweb/ontologie#totalConcerts">
+    <rdfs:comment xml:lang="DE">Anzahl der Konzerte des Künstlers</rdfs:comment>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    <rdfs:domain rdf:resource="htpp://www.imn.htwk-leipzig.de/~jdeck/semanticweb/ontologie#Concert"/>
+  </owl:DatatypeProperty>
+  <jdeck:Concert rdf:about="htpp://www.imn.htwk-leipzig.de/~jdeck/semanticweb/ontologie#Combichrist">
+    <jdeck:totalConcerts rdf:datatype="http://www.w3.org/2001/XMLSchema#long"
+    >38</jdeck:totalConcerts>
+    <jdeck:artistName>Combichrist</jdeck:artistName>
+  </jdeck:Concert>
+  <jdeck:Concert rdf:about="htpp://www.imn.htwk-leipzig.de/~jdeck/semanticweb/ontologie#SteveEarle">
+    <jdeck:totalConcerts rdf:datatype="http://www.w3.org/2001/XMLSchema#long"
+    >79</jdeck:totalConcerts>
+    <jdeck:artistName>Steve Earle</jdeck:artistName>
+  </jdeck:Concert>
+  <jdeck:Concert rdf:about="htpp://www.imn.htwk-leipzig.de/~jdeck/semanticweb/ontologie#Counterparts">
+    <jdeck:totalConcerts rdf:datatype="http://www.w3.org/2001/XMLSchema#long"
+    >59</jdeck:totalConcerts>
+    <jdeck:artistName>Counterparts</jdeck:artistName>
+  </jdeck:Concert>
+  <jdeck:Concert rdf:about="htpp://www.imn.htwk-leipzig.de/~jdeck/semanticweb/ontologie#Lina">
+    <jdeck:totalConcerts rdf:datatype="http://www.w3.org/2001/XMLSchema#long"
+    >0</jdeck:totalConcerts>
+    <jdeck:artistName>Lina</jdeck:artistName>
+  </jdeck:Concert>
+  <jdeck:Concert rdf:about="htpp://www.imn.htwk-leipzig.de/~jdeck/semanticweb/ontologie#GlassAnimals">
+    <jdeck:totalConcerts rdf:datatype="http://www.w3.org/2001/XMLSchema#long"
+    >3</jdeck:totalConcerts>
+    <jdeck:artistName>Glass Animals</jdeck:artistName>
+  </jdeck:Concert>
+  <jdeck:Concert rdf:about="htpp://www.imn.htwk-leipzig.de/~jdeck/semanticweb/ontologie#firstaidkit">
+    <jdeck:totalConcerts rdf:datatype="http://www.w3.org/2001/XMLSchema#long"
+    >66</jdeck:totalConcerts>
+    <jdeck:artistName>first aid kit</jdeck:artistName>
+  </jdeck:Concert>
+  <jdeck:Concert rdf:about="htpp://www.imn.htwk-leipzig.de/~jdeck/semanticweb/ontologie#PhilCampbell">
+    <jdeck:totalConcerts rdf:datatype="http://www.w3.org/2001/XMLSchema#long"
+    >22</jdeck:totalConcerts>
+    <jdeck:artistName>Phil Campbell</jdeck:artistName>
+  </jdeck:Concert>
+  <jdeck:Concert rdf:about="htpp://www.imn.htwk-leipzig.de/~jdeck/semanticweb/ontologie#Sum41">
+    <jdeck:totalConcerts rdf:datatype="http://www.w3.org/2001/XMLSchema#long"
+    >17</jdeck:totalConcerts>
+    <jdeck:artistName>Sum 41</jdeck:artistName>
+  </jdeck:Concert>
+  <jdeck:Concert rdf:about="htpp://www.imn.htwk-leipzig.de/~jdeck/semanticweb/ontologie#FLER">
+    <jdeck:totalConcerts rdf:datatype="http://www.w3.org/2001/XMLSchema#long"
+    >12</jdeck:totalConcerts>
+    <jdeck:artistName>FLER</jdeck:artistName>
+  </jdeck:Concert>
+  <jdeck:Concert rdf:about="htpp://www.imn.htwk-leipzig.de/~jdeck/semanticweb/ontologie#Lordi">
+    <jdeck:totalConcerts rdf:datatype="http://www.w3.org/2001/XMLSchema#long"
+    >34</jdeck:totalConcerts>
+    <jdeck:artistName>Lordi</jdeck:artistName>
+  </jdeck:Concert>
+  <jdeck:Concert rdf:about="htpp://www.imn.htwk-leipzig.de/~jdeck/semanticweb/ontologie#Wednesday13">
+    <jdeck:totalConcerts rdf:datatype="http://www.w3.org/2001/XMLSchema#long"
+    >69</jdeck:totalConcerts>
+    <jdeck:artistName>Wednesday 13</jdeck:artistName>
+  </jdeck:Concert>
+  <jdeck:Concert rdf:about="htpp://www.imn.htwk-leipzig.de/~jdeck/semanticweb/ontologie#Amorphis">
+    <jdeck:totalConcerts rdf:datatype="http://www.w3.org/2001/XMLSchema#long"
+    >65</jdeck:totalConcerts>
+    <jdeck:artistName>Amorphis</jdeck:artistName>
+  </jdeck:Concert>
+  <jdeck:Concert rdf:about="htpp://www.imn.htwk-leipzig.de/~jdeck/semanticweb/ontologie#Motorjesus">
+    <jdeck:totalConcerts rdf:datatype="http://www.w3.org/2001/XMLSchema#long"
+    >8</jdeck:totalConcerts>
+    <jdeck:artistName>Motorjesus</jdeck:artistName>
+  </jdeck:Concert>
+  <jdeck:Concert rdf:about="htpp://www.imn.htwk-leipzig.de/~jdeck/semanticweb/ontologie#hammerfall">
+    <jdeck:totalConcerts rdf:datatype="http://www.w3.org/2001/XMLSchema#long"
+    >28</jdeck:totalConcerts>
+    <jdeck:artistName>hammerfall</jdeck:artistName>
+  </jdeck:Concert>
+  <jdeck:Concert rdf:about="htpp://www.imn.htwk-leipzig.de/~jdeck/semanticweb/ontologie#JALIL">
+    <jdeck:totalConcerts rdf:datatype="http://www.w3.org/2001/XMLSchema#long"
+    >3</jdeck:totalConcerts>
+    <jdeck:artistName>JALIL</jdeck:artistName>
+  </jdeck:Concert>
+  <jdeck:Concert rdf:about="htpp://www.imn.htwk-leipzig.de/~jdeck/semanticweb/ontologie#FlashForward">
+    <jdeck:totalConcerts rdf:datatype="http://www.w3.org/2001/XMLSchema#long"
+    >0</jdeck:totalConcerts>
+    <jdeck:artistName>Flash Forward</jdeck:artistName>
+  </jdeck:Concert>
+  <jdeck:Concert rdf:about="htpp://www.imn.htwk-leipzig.de/~jdeck/semanticweb/ontologie#AxelRudiPell">
+    <jdeck:totalConcerts rdf:datatype="http://www.w3.org/2001/XMLSchema#long"
+    >15</jdeck:totalConcerts>
+    <jdeck:artistName>Axel Rudi Pell</jdeck:artistName>
+  </jdeck:Concert>
+  <jdeck:Concert rdf:about="htpp://www.imn.htwk-leipzig.de/~jdeck/semanticweb/ontologie#JoshT.Pearson">
+    <jdeck:totalConcerts rdf:datatype="http://www.w3.org/2001/XMLSchema#long"
+    >9</jdeck:totalConcerts>
+    <jdeck:artistName>Josh T. Pearson</jdeck:artistName>
+  </jdeck:Concert>
+  <jdeck:Concert rdf:about="htpp://www.imn.htwk-leipzig.de/~jdeck/semanticweb/ontologie#DieterThomasKuhn">
+    <jdeck:totalConcerts rdf:datatype="http://www.w3.org/2001/XMLSchema#long"
+    >30</jdeck:totalConcerts>
+    <jdeck:artistName>Dieter Thomas Kuhn</jdeck:artistName>
+  </jdeck:Concert>
+  <jdeck:Concert rdf:about="htpp://www.imn.htwk-leipzig.de/~jdeck/semanticweb/ontologie#GrahamNash">
+    <jdeck:totalConcerts rdf:datatype="http://www.w3.org/2001/XMLSchema#long"
+    >31</jdeck:totalConcerts>
+    <jdeck:artistName>Graham Nash</jdeck:artistName>
+  </jdeck:Concert>
+  <jdeck:Concert rdf:about="htpp://www.imn.htwk-leipzig.de/~jdeck/semanticweb/ontologie#Helmet">
+    <jdeck:totalConcerts rdf:datatype="http://www.w3.org/2001/XMLSchema#long"
+    >26</jdeck:totalConcerts>
+    <jdeck:artistName>Helmet</jdeck:artistName>
+  </jdeck:Concert>
+  <jdeck:Concert rdf:about="htpp://www.imn.htwk-leipzig.de/~jdeck/semanticweb/ontologie#Serum114">
+    <jdeck:totalConcerts rdf:datatype="http://www.w3.org/2001/XMLSchema#long"
+    >11</jdeck:totalConcerts>
+    <jdeck:artistName>Serum 114</jdeck:artistName>
+  </jdeck:Concert>
+</rdf:RDF>

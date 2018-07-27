@@ -1,0 +1,90 @@
+<rdf:RDF
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns:jdeck="htpp://www.imn.htwk-leipzig.de/~jdeck/semanticweb/ontologie#"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema#">
+  <owl:Class rdf:about="htpp://www.imn.htwk-leipzig.de/~jdeck/semanticweb/ontologie#Event"/>
+  <owl:DatatypeProperty rdf:about="htpp://www.imn.htwk-leipzig.de/~jdeck/semanticweb/ontologie#start_time">
+    <rdfs:comment xml:lang="DE">Startzeitpunkt des Events</rdfs:comment>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:domain rdf:resource="htpp://www.imn.htwk-leipzig.de/~jdeck/semanticweb/ontologie#Event"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="htpp://www.imn.htwk-leipzig.de/~jdeck/semanticweb/ontologie#artist">
+    <rdfs:comment xml:lang="DE">Name des Künstlers</rdfs:comment>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:domain rdf:resource="htpp://www.imn.htwk-leipzig.de/~jdeck/semanticweb/ontologie#Event"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="htpp://www.imn.htwk-leipzig.de/~jdeck/semanticweb/ontologie#title">
+    <rdfs:comment xml:lang="DE">Veranstaltungsname des Events</rdfs:comment>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:domain rdf:resource="htpp://www.imn.htwk-leipzig.de/~jdeck/semanticweb/ontologie#Event"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="htpp://www.imn.htwk-leipzig.de/~jdeck/semanticweb/ontologie#venue_name">
+    <rdfs:comment xml:lang="DE">Name des Veranstaltungsortes</rdfs:comment>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:domain rdf:resource="htpp://www.imn.htwk-leipzig.de/~jdeck/semanticweb/ontologie#Event"/>
+  </owl:DatatypeProperty>
+  <jdeck:Event rdf:about="htpp://www.imn.htwk-leipzig.de/~jdeck/semanticweb/ontologie#ParkbühneClara-Zetkin-Park">
+    <jdeck:artist>Dieter Thomas Kuhn</jdeck:artist>
+    <jdeck:artist>Lina</jdeck:artist>
+    <jdeck:artist>Steve Earle</jdeck:artist>
+    <jdeck:artist>Graham Nash</jdeck:artist>
+    <jdeck:venue_name>Parkbühne (Clara Zetkin Park)</jdeck:venue_name>
+    <jdeck:start_time>2018-08-11 00:00:00</jdeck:start_time>
+    <jdeck:title>Parkbühne Clara-Zetkin-Park</jdeck:title>
+  </jdeck:Event>
+  <jdeck:Event rdf:about="htpp://www.imn.htwk-leipzig.de/~jdeck/semanticweb/ontologie#FirstAidKit">
+    <jdeck:artist>first aid kit</jdeck:artist>
+    <jdeck:venue_name>Parkbühne GeyserHaus</jdeck:venue_name>
+    <jdeck:start_time>2018-08-17 00:00:00</jdeck:start_time>
+    <jdeck:title>First Aid Kit</jdeck:title>
+  </jdeck:Event>
+  <jdeck:Event rdf:about="htpp://www.imn.htwk-leipzig.de/~jdeck/semanticweb/ontologie#JoshT.Pearson">
+    <jdeck:artist>Josh T. Pearson</jdeck:artist>
+    <jdeck:venue_name>Taeubchenthal</jdeck:venue_name>
+    <jdeck:start_time>2018-08-21 00:00:00</jdeck:start_time>
+    <jdeck:title>Josh T. Pearson</jdeck:title>
+  </jdeck:Event>
+  <jdeck:Event rdf:about="htpp://www.imn.htwk-leipzig.de/~jdeck/semanticweb/ontologie#Sum41Leipzig">
+    <jdeck:artist>Sum 41</jdeck:artist>
+    <jdeck:venue_name>Parkbühne (Clara Zetkin Park)</jdeck:venue_name>
+    <jdeck:start_time>2018-08-22 20:00:00</jdeck:start_time>
+    <jdeck:title>Sum 41 Leipzig</jdeck:title>
+  </jdeck:Event>
+  <jdeck:Event rdf:about="htpp://www.imn.htwk-leipzig.de/~jdeck/semanticweb/ontologie#Hellraiser-Leipzig">
+    <jdeck:artist>Motorjesus</jdeck:artist>
+    <jdeck:artist>Amorphis</jdeck:artist>
+    <jdeck:artist>Phil Campbell</jdeck:artist>
+    <jdeck:artist>Serum 114</jdeck:artist>
+    <jdeck:artist>Lordi</jdeck:artist>
+    <jdeck:artist>Wednesday 13</jdeck:artist>
+    <jdeck:start_time>2018-08-31 00:00:00</jdeck:start_time>
+    <jdeck:artist>Combichrist</jdeck:artist>
+    <jdeck:artist>Axel Rudi Pell</jdeck:artist>
+    <jdeck:artist>hammerfall</jdeck:artist>
+    <jdeck:venue_name>Hellraiser Open Air Festival</jdeck:venue_name>
+    <jdeck:title>Hellraiser-Leipzig</jdeck:title>
+  </jdeck:Event>
+  <jdeck:Event rdf:about="htpp://www.imn.htwk-leipzig.de/~jdeck/semanticweb/ontologie#FelsenkellerLeipzig">
+    <jdeck:artist>JALIL</jdeck:artist>
+    <jdeck:artist>Counterparts</jdeck:artist>
+    <jdeck:artist>Flash Forward</jdeck:artist>
+    <jdeck:artist>FLER</jdeck:artist>
+    <jdeck:venue_name>Felsenkeller Leipzig</jdeck:venue_name>
+    <jdeck:start_time>2018-08-12 00:00:00</jdeck:start_time>
+    <jdeck:title>Felsenkeller Leipzig</jdeck:title>
+  </jdeck:Event>
+  <jdeck:Event rdf:about="htpp://www.imn.htwk-leipzig.de/~jdeck/semanticweb/ontologie#Helmet">
+    <jdeck:artist>Helmet</jdeck:artist>
+    <jdeck:venue_name>Werk II; Halle D</jdeck:venue_name>
+    <jdeck:start_time>2018-08-02 00:00:00</jdeck:start_time>
+    <jdeck:title>Helmet</jdeck:title>
+  </jdeck:Event>
+  <jdeck:Event rdf:about="htpp://www.imn.htwk-leipzig.de/~jdeck/semanticweb/ontologie#GlassAnimals-OpenAir2018">
+    <jdeck:artist>Glass Animals</jdeck:artist>
+    <jdeck:venue_name>Parkbühne (Clara Zetkin Park)</jdeck:venue_name>
+    <jdeck:start_time>2018-08-04 00:00:00</jdeck:start_time>
+    <jdeck:title>Glass Animals - Open Air 2018</jdeck:title>
+  </jdeck:Event>
+</rdf:RDF>
