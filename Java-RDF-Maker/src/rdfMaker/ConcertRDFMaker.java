@@ -3,6 +3,7 @@ package rdfMaker;
 import javaModel.Concert;
 import org.apache.jena.ontology.*;
 import org.apache.jena.rdf.model.ModelFactory;
+import org.apache.jena.rdf.model.Resource;
 import org.apache.jena.vocabulary.XSD;
 
 import java.io.File;
@@ -22,7 +23,7 @@ public class ConcertRDFMaker {
     private OntModel makeRDFGraph(List<Concert> concerts){
         //RDF Ontologie erzeugen
         //Verweis auf eigenen Namespace
-        String nameSpaceHTWK = "htpp://www.imn.htwk-leipzig.de/~jdeck/semanticweb/ontologie#";
+        String nameSpaceHTWK = "http://www.imn.htwk-leipzig.de/~jdeck/semanticweb/ontologie#";
 
         OntModel ontModel = ModelFactory.createOntologyModel(OntModelSpec.OWL_MEM);
 
@@ -46,10 +47,14 @@ public class ConcertRDFMaker {
         // -- Graph mit Individuen/Individuals erstellen --
         // Individuen (Artists) zum Model hinzufügen
         for (Concert concert : concerts) {
+            String artistName = concert.getArtistName().replaceAll("[\\[\\](){}]", "_").replaceAll(" ", "_").replaceAll("'", "");
             // Individuum hinzufügen
-            Individual i = ontModel.createIndividual(nameSpaceHTWK + concert.getArtistName().replaceAll(" ", ""), concertClass);
+            Individual i = ontModel.createIndividual(nameSpaceHTWK + artistName.toLowerCase(), concertClass);
             // Properties hinzufügen
-            i.addProperty(artistNameProperty, concert.getArtistName());
+            //i.addProperty(artistNameProperty, concert.getArtistName());
+
+            Resource resource = ontModel.createResource(nameSpaceHTWK + artistName.toLowerCase());
+            i.addProperty(artistNameProperty, resource);
 
             String concertCount = Integer.toString(concert.getTotalConcerts());
             i.addLiteral(totalConcertsProperty, concert.getTotalConcerts());

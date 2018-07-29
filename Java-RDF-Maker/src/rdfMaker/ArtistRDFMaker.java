@@ -3,6 +3,7 @@ package rdfMaker;
 import javaModel.Artist;
 import org.apache.jena.ontology.*;
 import org.apache.jena.rdf.model.ModelFactory;
+import org.apache.jena.rdf.model.Resource;
 import org.apache.jena.vocabulary.XSD;
 
 import java.io.File;
@@ -22,7 +23,7 @@ public class ArtistRDFMaker {
     private OntModel makeRDFGraph(List<Artist> artists){
         //RDF Ontologie erzeugen
         //Verweis auf eigenen Namespace
-        String nameSpaceHTWK = "htpp://www.imn.htwk-leipzig.de/~jdeck/semanticweb/ontologie#";
+        String nameSpaceHTWK = "http://www.imn.htwk-leipzig.de/~jdeck/semanticweb/ontologie#";
 
         OntModel ontModel = ModelFactory.createOntologyModel(OntModelSpec.OWL_MEM);
 
@@ -52,10 +53,12 @@ public class ArtistRDFMaker {
         // -- Graph mit Individuen/Individuals erstellen --
         // Individuen (Artists) zum Model hinzufügen
         for (Artist artist : artists) {
+            String artistName = artist.getName().replaceAll("[\\[\\](){}]", "_").replaceAll(" ", "_").replaceAll("'", "");
             // Individuum hinzufügen
-            Individual i = ontModel.createIndividual(nameSpaceHTWK + artist.getName().replaceAll(" ", ""), artistClass);
+            Individual i = ontModel.createIndividual(nameSpaceHTWK + artistName.toLowerCase(), artistClass);
             // Properties hinzufügen
-            i.addProperty(artistNameProperty, artist.getName());
+            i.addProperty(artistNameProperty, artistName.toLowerCase());
+
 
             String followers = Integer.toString(artist.getFollowers());
             i.addLiteral(artistFollowerProperty, artist.getFollowers());

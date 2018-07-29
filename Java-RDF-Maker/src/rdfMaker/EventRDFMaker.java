@@ -3,6 +3,7 @@ package rdfMaker;
 import javaModel.Event;
 import org.apache.jena.ontology.*;
 import org.apache.jena.rdf.model.ModelFactory;
+import org.apache.jena.rdf.model.Resource;
 import org.apache.jena.vocabulary.XSD;
 
 import java.io.File;
@@ -22,7 +23,7 @@ public class EventRDFMaker {
     private OntModel makeRDFGraph(List<Event> events){
         //RDF Ontologie erzeugen
         //Verweis auf eigenen Namespace
-        String nameSpaceHTWK = "htpp://www.imn.htwk-leipzig.de/~jdeck/semanticweb/ontologie#";
+        String nameSpaceHTWK = "http://www.imn.htwk-leipzig.de/~jdeck/semanticweb/ontologie#";
 
         OntModel ontModel = ModelFactory.createOntologyModel(OntModelSpec.OWL_MEM);
 
@@ -64,7 +65,10 @@ public class EventRDFMaker {
             i.addProperty(EventTitleProperty, event.getTitle());
             i.addProperty(EventStartTimeProperty, event.getStart_time());
             i.addProperty(EventVenueNameProperty, event.getVenue_name());
-            i.addProperty(EventArtistProperty, event.getArtist());
+            //i.addProperty(EventArtistProperty, event.getArtist());
+            String artistName = event.getArtist().replaceAll("[\\[\\](){}]", "_").replaceAll(" ", "_").replaceAll("'", "");
+            Resource resource = ontModel.createResource(nameSpaceHTWK + artistName.toLowerCase());
+            i.addProperty(EventArtistProperty, resource);
         }
 
         return ontModel; // OntModel zurückgeben

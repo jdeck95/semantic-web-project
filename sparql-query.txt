@@ -1,16 +1,16 @@
-PREFIX nshtwk: <htpp://www.imn.htwk-leipzig.de/~jdeck/semanticweb/ontologie#>
+PREFIX jdeck: <http://www.imn.htwk-leipzig.de/~jdeck/semanticweb/ontologie#>
 
-SELECT ?venue_title ?venue_name ?date ?name ?followers ?totalConcerts
+SELECT ?artistName ?event ?time ?followers ?totalConcerts 
 WHERE
 {
-  ?artist nshtwk:name ?name.
-  ?artist nshtwk:followers ?followers.
-  ?event nshtwk:venue_name ?venue_name.
-  ?event nshtwk:title ?venue_title.
-  ?event nshtwk:start_time ?date.
-  ?event nshtwk:artist ?artistName.
-  ?concert nshtwk:totalConcerts ?totalConcerts.
-  ?concert nshtwk:artistName ?concertArtist.
-  FILTER(lcase(str(?artistName))=lcase(str(?name))&&lcase(str(?artistName))=lcase(str(?concertArtist)))
+  ?eventRes a jdeck:Event;
+            jdeck:venue_name ?event;
+            jdeck:start_time ?time;
+            jdeck:artist ?resource .
+
+  ?resource jdeck:followers ?followers ;
+            jdeck:name ?artistName;
+  			jdeck:totalConcerts ?totalConcerts.
+
 }
 ORDER by DESC(?followers)
