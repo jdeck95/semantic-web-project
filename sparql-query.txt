@@ -11,6 +11,6 @@ WHERE
   ?event nshtwk:artist ?artistName.
   ?concert nshtwk:totalConcerts ?totalConcerts.
   ?concert nshtwk:artistName ?concertArtist.
-  FILTER(?artistName=?name&&?artistName=?concertArtist)
+  FILTER(lcase(str(?artistName))=lcase(str(?name))&&lcase(str(?artistName))=lcase(str(?concertArtist)))
 }
 ORDER by DESC(?followers)
